@@ -1,0 +1,61 @@
+nav.nav-primary{
+  z-index: 99;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  padding-left: 50px;
+  background-color: #fff;
+  
+  //General links
+  a{
+    &:hover{
+      color: #000;
+      text-decoration: none;
+      border-bottom: 4px solid #000;
+    }
+  }
+
+  .current-menu-item>a{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 4px solid #000;
+  }
+
+  //Disposition des liens
+  div.menu-primary_navigation-container{
+    ul#menu-primary_navigation{
+      @include font-size(9px);
+      font-weight: bold;
+
+      // Premier lot de liens (films films longs, film courts, projets)
+      >li:first-child{
+        ul{
+          list-style-type: none;
+          padding-left: 0;
+          >li:first-of-type{
+            margin-left: 50px;
+          }
+          li{
+            display: inline-block;
+            margin-right: 50px;
+          }
+        }
+      }
+
+      // Second lot de liens (à propos, contact)
+      >li:nth-child(2){
+        right: 50px;
+        position: absolute;
+        ul{
+          list-style-type: none;
+          padding-left: 0;
+
+        }
+      }
+    }
+  }
+}
