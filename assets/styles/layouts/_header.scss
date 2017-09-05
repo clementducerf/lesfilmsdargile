@@ -1,6 +1,14 @@
-#logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
+header.banner{
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 30px;
+
+  #logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
 }

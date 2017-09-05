@@ -33,9 +33,11 @@ nav.nav-primary{
 
       // Premier lot de liens (films films longs, film courts, projets)
       >li:first-child{
-        ul{
+        ul.sub-menu{
+          margin-top: 5px;
           list-style-type: none;
           padding-left: 0;
+
           >li:first-of-type{
             margin-left: 50px;
           }
@@ -50,7 +52,8 @@ nav.nav-primary{
       >li:nth-child(2){
         right: 50px;
         position: absolute;
-        ul{
+        ul.sub-menu{
+          margin-top: 5px;
           list-style-type: none;
           padding-left: 0;
 

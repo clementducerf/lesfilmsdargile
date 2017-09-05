@@ -1,0 +1,40 @@
+article.post{
+  .col1{
+    width: 190px;
+    margin-right: 14px;
+    float: left;
+    p{
+      @include font-size(9px);
+      margin-bottom: 0;
+    }
+    h1{
+      @include font-size(16px);
+      font-weight: bold;
+    }
+    p.author{
+      font-weight: bold;
+      span.book{
+        font-weight: normal;
+      }
+    }
+  }
+  .col2{
+    width: 190px;
+    height: 285px;
+    background-color: #dedede;
+    margin-right: 14px;
+    float: left;
+  }
+
+  .col3{
+    width: 384px;
+    height: 285px;
+    background-color: #dedede;
+    margin-right: 14px;
+    float: left;
+  }
+  hr{
+    clear: both;
+    float: none;
+  }
+}

@@ -21,14 +21,9 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="wrap container" role="document">
       <div class="content row">
-        <main class="main">
+        <main class="main <?php if(is_home()){ echo "home"; } ?>">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php

@@ -45,8 +45,11 @@ html, body{
 a{
   color: #000;
 }
-
-main.main{
+main{
+  //margin for fixed header height
+  padding-top: 150px;
+}
+main.home{
   article{
     display: inline-block;
     height: 285px;
