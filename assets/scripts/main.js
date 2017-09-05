@@ -27,7 +27,53 @@
     // Home page
     'home': {
       init: function() {
+
+        function setCookie(cname, cvalue, exdays) {
+          var d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          var expires = "expires="+ d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+
+
         // JavaScript to be fired on the home page
+
+        //if visitor hasn't come in 1 day
+        if(!(getCookie("visited") === "ok")){
+
+        //we hide the navigation and the scroll
+        $('nav.nav-primary').hide();
+          $('body').addClass('no-scroll');
+
+        // we show the introduction
+          $('#introduction').show();
+        }
+
+        // here's what happen on click
+        $('#introduction').click(function(e){
+          e.preventDefault();
+          $('body').removeClass('no-scroll');
+          $(this).fadeOut('slow');
+          $('nav.nav-primary').fadeIn('slow');
+          setCookie("visited", "ok", 1);
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

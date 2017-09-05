@@ -1,0 +1,31 @@
+div.apropos{
+  .introduction,.conclusion{
+    width: 615px;
+    margin-bottom: 14px;
+    @include font-size(14px);
+  }
+  .deuxcolonnes{
+    float: left;
+    width: 300px;
+    margin-right: 14px;
+    @include font-size(12px);
+    p{
+      margin-bottom: 14px;
+    }
+  }
+  .troiscolonnes{
+    float: left;
+    width: 190px;
+    margin-right: 14px;
+    @include font-size(11px);
+
+    img{
+      margin-bottom: 14px;
+    }
+    h2{
+      @include font-size(11px);
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+}
