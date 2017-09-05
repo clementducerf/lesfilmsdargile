@@ -11,7 +11,7 @@ use Roots\Sage\Wrapper;
   <body <?php body_class(); ?>>
     <!--[if IE]>
       <div class="alert alert-warning">
-        <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
+        <?php _e('Vous utilisez un navigateur <strong>périmé</strong>. Pensez <a href="http://browsehappy.com/">à le mettre à jour</a> pour améliorer votre expérience.', 'sage'); ?>
       </div>
     <![endif]-->
     <?php
