@@ -3,6 +3,7 @@ article.post{
   .col1{
     width: 190px;
     margin-right: 14px;
+    margin-bottom: 14px;
     float: left;
     min-height: 800px;
 
@@ -26,18 +27,49 @@ article.post{
     height: 285px;
     background-color: #dedede;
     margin-right: 14px;
+    margin-bottom: 14px;
     float: left;
   }
 
   .col3{
-    width: 384px;
+    width: 598px;
     height: 285px;
     background-color: #dedede;
     margin-right: 14px;
+    margin-bottom: 14px;
     float: left;
+    /*&:after{
+      content: ' ';
+      clear: both;
+      float: none;
+    }*/
+  }
+  .entry-content{
+    float: left;
+    width: 802px;
+    //max-height: 10em;
+    height: 15em;
+    //min-height: 6em;
+    @include font-size(14px);
+    line-height: 130%;
+
+    //colonnes
+
+    -webkit-columns: 394px 2;
+    -moz-columns: 394px 2;
+    columns: 394px 2;
+
+    -webkit-column-gap: 14px;
+    -moz-column-gap: 14px;
+    column-gap: 14px;
+
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
   }
   hr{
     clear: both;
     float: none;
+    background-color: #000;
   }
 }

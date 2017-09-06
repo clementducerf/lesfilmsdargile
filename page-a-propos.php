@@ -1,7 +1,7 @@
 <div class="apropos">
 <?php
 /* Template Name: A propos */
-while (have_posts()) : the_post(); ?>
+ ?>
     <?php get_template_part('templates/page', 'header'); ?>
     <div class="introduction">
         <p>
@@ -11,7 +11,7 @@ while (have_posts()) : the_post(); ?>
     <div class="deuxcolonnes">
         <p>
             <b>Nous avons fondé notre structure sur deux bases solides&nbsp;:</b><br/>
-            •&nbsp;Une longue activité de production sous la forme d’une association étudiante (fondée, elle, en 2008) qui fut le laboratoire brouillon des premières expériences et via laquelle nous avons produit, en 2012, le long-métrage <em>Études pour un paysage amoureux.</em> Distribué en salle (Saint- André-des-Arts et province), le lm a rencontré un public enthousiaste, qui nous a encouragés à persévérer dans cette voie de l’autoproduction et de l’indépendance.
+            •&nbsp;Une longue activité de production sous la forme d’une association étudiante (fondée, elle, en 2008) qui fut le laboratoire brouillon des premières expériences et via laquelle nous avons produit, en 2012, le long-métrage <em>Études pour un paysage amoureux.</em> Distribué en salle (Saint- André-des-Arts et province), le film a rencontré un public enthousiaste, qui nous a encouragés à persévérer dans cette voie de l’autoproduction et de l’indépendance.
         </p>
     </div>
     <div class="deuxcolonnes">
@@ -40,6 +40,6 @@ while (have_posts()) : the_post(); ?>
         <p>Né en 1989, <b>Clément Schneider</b> suit d’abord une classe préparatoire de cinéma. Un passage par <b>Louis-Lumière</b>, avant d’entrer à la <b>Fémis</b>, dans le département Réalisation. Il profite des rencontres et des possibilités que lui offre l’école pour réaliser le long-métrage Études pour un paysage amoureux. À la sortie de l’école, il fonde avec <b>Chloé Chevalier</b> et <b>Alice Bégon</b> la société <b>Les Films d’Argile</b>, afin de prolonger son travail de cinéaste indépendant, tout en travaillant comme projectionniste. Aujourd’hui, il démarre en outre une thèse sur un sujet qui le travaille depuis longtemps&#8239;: <em>les relations entre le cinéma et l’utopie.</em></p>
     </div>
     <?php get_template_part('templates/content', 'page'); ?>
-<?php endwhile; ?>
+
 
 </div>

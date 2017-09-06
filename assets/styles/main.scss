@@ -39,26 +39,33 @@ html, body{
   hyphens: none;
   /* réglage des fonts par défaut */
   font-family: "Jannon Sans";
-  font-size: 29px;
+  font-size: 27px;
   padding-bottom: 150px;
 }
 
 #introduction {
-  display: none; //to be shown using javascript if user has js enabled
+  display: none; // will be shown using javascript if user has js enabled
   position: absolute;
   z-index: 100;
   top: 150px;
-  bottom: 0;
   left: 0;
-  right: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: #fff;
 ;
 }
 #accueil {
-  position: absolute;
-  top: 50%; /* poussé de la moitié de hauteur du référent */
-  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
-  max-width: 100%;
+  position: relative;
+  top: 0;
+  max-width: 580px;
+  /*
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  */
+
 }
 
 
@@ -89,6 +96,7 @@ main.home, .filmslongs{
 
     div.entry-summary{
       @include font-size(9px);
+      //line-height: 130%;
       p{
         margin-bottom: 0;
       }

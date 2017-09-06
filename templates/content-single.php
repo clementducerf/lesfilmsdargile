@@ -39,17 +39,3 @@
     <?php comments_template('/templates/comments.php'); ?>
   </article>
 <?php endwhile; ?>
-
-
-<script>
-  $(document).ready(function() {
-    console.log( "ready!" );
-
-    $("p.author").html(function(){
-      var text= $(this).text().trim().split(" ");
-      var first = text.shift();
-      return (text.length > 0 ? "<span class='book'>"+ first + "</span> " : first) + text.join(" ");
-    });
-
-  });
-</script>
