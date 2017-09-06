@@ -26,16 +26,34 @@
         </p>
     </div>
     <div class="troiscolonnes">
-        <img src="http://via.placeholder.com/190x126"/>
+        <div class="img-container" style="
+        background: url(<?php echo get_template_directory_uri(); ?>/assets/images/apropos/alice-begon.jpg) no-repeat center;
+        -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+        background-size: cover; /* version standardisée */
+        background-position: center top;
+        ">
+        </div>
         <h2>Alice Bégon</h2>
     </div>
     <div class="troiscolonnes">
-        <img src="http://via.placeholder.com/190x126"/>
+        <div class="img-container" style="
+            background: url(<?php echo get_template_directory_uri(); ?>/assets/images/apropos/chloe-chevalier.jpg) no-repeat center;
+            -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+            background-size: cover; /* version standardisée */
+            background-position: center top;
+            ">
+        </div>
         <h2>Chloé Chevalier</h2>
         <p>Née en 1988, titulaire d’un Master de cinéma sur la fantasy, <b>Chloé Chevalier</b> commence par naviguer entre plusieurs activités – assistanat, production – avant de se focaliser essentiellement sur l’écriture. Trois longs métrages de sa plume sont actuellement en développement chez <b>les Films d’Argile.</b> Son expérience de l’écriture ne se limite pas au scénario puisque <b>Chloé Chevalier</b> écrit aussi des romans – sa série <em>Récits du Demi-Loup</em>, en quatre tomes, est publiée chez <b>les Moutons Électriques</b> – confirmant par la même occasion son goût pour les intrigues amples et la création d’univers imaginaires complexes.</p>
     </div>
     <div class="troiscolonnes">
-        <img src="http://via.placeholder.com/190x126"/>
+        <div class="img-container" style="
+            background: url(<?php echo get_template_directory_uri(); ?>/assets/images/apropos/clement-schneider.jpg) no-repeat center;
+            -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+            background-size: cover; /* version standardisée */
+            background-position: center top;
+            ">
+        </div>
         <h2>Clément Schneider</h2>
         <p>Né en 1989, <b>Clément Schneider</b> suit d’abord une classe préparatoire de cinéma. Un passage par <b>Louis-Lumière</b>, avant d’entrer à la <b>Fémis</b>, dans le département Réalisation. Il profite des rencontres et des possibilités que lui offre l’école pour réaliser le long-métrage Études pour un paysage amoureux. À la sortie de l’école, il fonde avec <b>Chloé Chevalier</b> et <b>Alice Bégon</b> la société <b>Les Films d’Argile</b>, afin de prolonger son travail de cinéaste indépendant, tout en travaillant comme projectionniste. Aujourd’hui, il démarre en outre une thèse sur un sujet qui le travaille depuis longtemps&#8239;: <em>les relations entre le cinéma et l’utopie.</em></p>
     </div>

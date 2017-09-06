@@ -1,20 +1,27 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
-<?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'sage'); ?>
-  </div>
-  <?php get_search_form(); ?>
-<?php endif; ?>
-
 <div id="introduction">
   <a href="#">
     <img id="accueil" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueil.jpg">
   </a>
 </div>
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-<?php endwhile; ?>
+<?php
 
-<?php the_posts_navigation(); ?>
+  wp_reset_query();
+  // custom query based on random order
+  $args = array(
+  'post_type' => 'post',
+  'orderby' => 'rand');
+
+   $query = new WP_Query($args);
+
+if ($query->have_posts()): while ($query->have_posts()) : $query->the_post();
+
+// First render the post that are not in the current using the meta
+
+    get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format());
+
+    ?>
+<?php endwhile; ?>
+<?php endif; ?>

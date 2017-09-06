@@ -20,7 +20,16 @@
       <p>Montages&#8239;: <b><?= get_post_meta(get_the_ID(), 'montage', true); ?></b></p>
     </div>
 
-    <div class="col2">
+    <div class="col2" style="
+        background: url(<?php if ( has_post_thumbnail() ) {echo get_the_post_thumbnail_url();} ?>) no-repeat center;
+        -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+        background-size: cover; /* version standardisée */
+        background-position: center top;
+    <?php
+    $title = get_the_title();
+  ?>
+
+    ">
     </div>
 
     <div class="col3">
