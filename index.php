@@ -7,7 +7,6 @@
 </div>
 
 <?php
-
   wp_reset_query();
   // custom query based on random order
   $args = array(

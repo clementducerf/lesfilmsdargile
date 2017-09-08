@@ -22,6 +22,8 @@ article.post{
       }
     }
   }
+
+
   .col2{
     width: 190px;
     height: 285px;
@@ -37,11 +39,6 @@ article.post{
     margin-right: 14px;
     margin-bottom: 14px;
     float: left;
-    /*&:after{
-      content: ' ';
-      clear: both;
-      float: none;
-    }*/
   }
   .entry-content{
     float: left;
@@ -70,5 +67,6 @@ article.post{
     clear: both;
     float: none;
     background-color: #000;
+    margin-bottom: 3rem;
   }
 }

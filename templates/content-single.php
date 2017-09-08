@@ -29,7 +29,7 @@
     </div>
 
     <div class="col3">
-      <?php echo do_shortcode('[meta_gallery_carousel slide_to_show="1" slide_to_scroll="1" autoplay="false" autoplay_speed="3000" speed="300" arrows="false" dots="false" show_title="false" show_caption="false"]'); ?>
+      <?php echo do_shortcode('[meta_gallery_carousel slide_to_show="1" slide_to_scroll="1" autoplay="true" autoplay_speed="3000" speed="300" arrows="false" dots="false" show_title="false" show_caption="false"]'); ?>
     </div>
 
     <div class="col4">
@@ -43,6 +43,9 @@
       ?>
     </div>
     <hr>
+    <div class="movies">
+      <?php comments_template('/templates/index-like.php'); ?>
+    </div>
     <footer>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
