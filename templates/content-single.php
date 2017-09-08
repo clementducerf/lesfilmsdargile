@@ -25,21 +25,22 @@
         -webkit-background-size: cover; /* pour anciens Chrome et Safari */
         background-size: cover; /* version standardisée */
         background-position: center top;
-    <?php
-    $title = get_the_title();
-  ?>
-
     ">
     </div>
 
     <div class="col3">
+      <?php echo do_shortcode('[meta_gallery_carousel slide_to_show="1" slide_to_scroll="1" autoplay="false" autoplay_speed="3000" speed="300" arrows="false" dots="false" show_title="false" show_caption="false"]'); ?>
     </div>
 
     <div class="col4">
 
     </div>
     <div class="entry-content">
-      <?php the_content(); ?>
+      <?php
+      //the_content();
+      echo  get_content_without_tag( apply_filters( 'the_content', get_the_content() ), 'div' );
+      //echo get_content_without_tag( apply_filters( 'the_content', $var, 'p');
+      ?>
     </div>
     <hr>
     <footer>

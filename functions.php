@@ -90,3 +90,23 @@ if(!function_exists('add_query_meta')) {
     return $wp_query;
   }
 }
+
+
+//get only text content from post
+
+function get_content_without_tag( $html, $tag )
+{
+  // Return false if no html or tag is passed
+  if ( !$html || !$tag )
+    return false;
+
+  $dom = new DOMDocument;
+  //$dom->loadHTML( $html );
+  $dom->loadHTML(mb_convert_encoding($html, 'HTML-ENTITIES', 'UTF-8'));
+
+  $dom_x_path = new DOMXPath( $dom );
+  while ($node = $dom_x_path->query( '//' . $tag )->item(0)) {
+    $node->parentNode->removeChild( $node );
+  }
+  return $dom->saveHTML();
+}
