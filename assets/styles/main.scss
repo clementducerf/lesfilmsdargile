@@ -46,30 +46,33 @@ html, body{
 #introduction {
   display: none; // will be shown using javascript if user has js enabled
   position: absolute;
-  z-index: 100;
+  z-index: 98;
   top: 150px;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 150px);
   background-color: #fff;
 ;
 }
 #accueil {
   position: relative;
-  top: 0;
+  top: calc(50% - 150px);
   max-width: 580px;
-  /*
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  */
+  left: 50%;
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 
+  @include mq($from: mobile, $until:tablet) {
+    max-width: 100%;
+
+  }
 }
 
 
-main.home, .filmslongs, .filmscourts, .projets{
+main.home, .filmslongs, .filmscourts, .projets, .movies{
   article{
     display: inline-block;
     height: 285px;
