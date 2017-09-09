@@ -56,8 +56,9 @@ html, body{
 }
 #accueil {
   position: relative;
-  top: calc(50% - 150px);
+  top: calc(50% - 75px);
   max-width: 580px;
+  height: auto;
   left: 50%;
   -moz-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
@@ -70,7 +71,22 @@ html, body{
 
   }
 }
-
+.hover{
+  a{
+    p.date{
+      display: none;
+    }
+    h2.entry-title{
+      display: none;
+    }
+    div.entry-summary{
+      display: none;
+    }
+    .hoverimg{
+      display: block!important;
+    }
+  }
+}
 
 main.home, .filmslongs, .filmscourts, .projets, .movies{
   article{
@@ -84,30 +100,38 @@ main.home, .filmslongs, .filmscourts, .projets, .movies{
     margin-top: 7px;
     margin-bottom: 7px;
 
-    time{
-      font-weight: bold;
-      @include font-size(9px);
-    }
-
-    h2{
-      font-weight: bold;
-      @include font-size(16px);
-      a:hover{
-        color: #000;
-      }
-    }
-
-    div.entry-summary{
-      @include font-size(9px);
-      //line-height: 130%;
-      p{
-        margin-bottom: 0;
-      }
-    }
-
     a{
       text-decoration: none;
       color: #000;
+
+      .hoverimg{
+        display: none;
+      }
+      img{
+        max-width: 100%;
+      }
+
+      p.date{
+        font-weight: bold;
+        @include font-size(9px);
+        margin-bottom: 0;
+      }
+
+      h2{
+        font-weight: bold;
+        @include font-size(14px);
+        a:hover{
+          color: #000;
+        }
+      }
+
+      div.entry-summary{
+        @include font-size(9px);
+        //line-height: 130%;
+        p{
+          margin-bottom: 0;
+        }
+      }
 
       &:hover{
         h2{

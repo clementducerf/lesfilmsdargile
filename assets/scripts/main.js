@@ -19,6 +19,18 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+
+        var articlecontent;
+        $("main").on('mouseenter','article.brick',function () {
+          $(this).find('img').attr('src', $(this).data('img'));
+          $(this).addClass("hover");
+        });
+
+        $("main").on('mouseleave','article.brick',function () {
+          $(this).removeClass("hover");
+        });
+
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -50,8 +62,6 @@
           }
           return "";
         }
-
-
         // JavaScript to be fired on the home page
 
         //if visitor hasn't come in 1 day

@@ -2,7 +2,7 @@
 
 <div id="introduction">
   <a href="#">
-    <img id="accueil" src="<?php echo get_template_directory_uri(); ?>/assets/images/accueil.jpg">
+      <?php echo get_the_post_thumbnail(get_page_by_title('accueil'),'post-thumbnail', array('id'=>'accueil')) ?>
   </a>
 </div>
 
