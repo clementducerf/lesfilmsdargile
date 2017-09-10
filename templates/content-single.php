@@ -7,13 +7,15 @@
       <p class="author"><?php
         $voyelles = "AEIOU";
         $firstletter = substr(get_post_meta(get_the_ID(), 'auteur', true), 0, 1);
+        $pageurl = get_permalink(get_page_by_title('realisateurs'));
+
           if(strpos($voyelles, $firstletter) === false){
             echo "de ";
           }
           else{
             echo "d'";
         }
-        echo "<a href='#'>".get_post_meta(get_the_ID(), 'auteur', true)."</a>";
+        echo "<a href='".$pageurl."?realisateur=".htmlspecialchars(get_post_meta(get_the_ID(), 'auteur', true))."'>".get_post_meta(get_the_ID(), 'auteur', true)."</a>";
         ?></p>
       <p><?= get_post_meta(get_the_ID(), 'type', true); ?></p>
       <p><?= get_post_meta(get_the_ID(), 'format', true); ?></p>

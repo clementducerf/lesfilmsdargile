@@ -18,7 +18,7 @@
         71250 Cluny</b>
         <br/><br/>
         <a href="https://www.facebook.com/Les-Films-dArgile-373675522719895/" target="_blank">facebook</a>
-    </p>
+    </p><br/>
 </div>
 <div class="deuxcolonnes">
     <p>

@@ -9,7 +9,7 @@ div.apropos{
 
   .introduction,.conclusion{
     width: 615px;
-    @media (min-width: 320px) and (max-width: 1109px){
+    @media (min-width: 320px) and (max-width: 768px){
       width: 100%;
     }
     p{

@@ -11,8 +11,8 @@ if ($query->have_posts()): while ($query->have_posts()) : $query->the_post();
 
 // First render the post that are not in the current using the meta
 
-    get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format());
+get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format());
 
-    ?>
+?>
 <?php endwhile; ?>
 <?php endif; ?>
