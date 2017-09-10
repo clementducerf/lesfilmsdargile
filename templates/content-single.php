@@ -1,9 +1,20 @@
+<div class="posts">
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <div class="col1">
       <p><b><?= get_post_meta(get_the_ID(), 'date', true); ?></b></p>
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <p class="author"><?= get_post_meta(get_the_ID(), 'auteur', true); ?></p>
+      <p class="author"><?php
+        $voyelles = "AEIOU";
+        $firstletter = substr(get_post_meta(get_the_ID(), 'auteur', true), 0, 1);
+          if(strpos($voyelles, $firstletter) === false){
+            echo "de ";
+          }
+          else{
+            echo "d'";
+        }
+        echo "<a href='#'>".get_post_meta(get_the_ID(), 'auteur', true)."</a>";
+        ?></p>
       <p><?= get_post_meta(get_the_ID(), 'type', true); ?></p>
       <p><?= get_post_meta(get_the_ID(), 'format', true); ?></p>
       <br/>
@@ -52,3 +63,4 @@
     <?php comments_template('/templates/comments.php'); ?>
   </article>
 <?php endwhile; ?>
+</div>

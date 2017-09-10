@@ -13,8 +13,7 @@
             <b>Nous avons fondé notre structure sur deux bases solides&nbsp;:</b><br/>
             •&nbsp;Une longue activité de production sous la forme d’une association étudiante (fondée, elle, en 2008) qui fut le laboratoire brouillon des premières expériences et via laquelle nous avons produit, en 2012, le long-métrage <em>Études pour un paysage amoureux.</em> Distribué en salle (Saint- André-des-Arts et province), le film a rencontré un public enthousiaste, qui nous a encouragés à persévérer dans cette voie de l’autoproduction et de l’indépendance.
         </p>
-    </div>
-    <div class="deuxcolonnes">
+        <div class="columnbreak"></div>
         <p>
             •&nbsp;La complémentarité de nos trois profils : Une productrice forte d’une riche expérience (au sein de la société <b>Stromboli Films</b>, elle produit notamment le court métrage <em>Jeunesse des loups Garous</em> de <b>Yann Delattre</b> sélectionné à la <em>Semaine de la critique 2015</em>). Un producteur-réalisateur-projectionniste en cours de rédaction d’une thèse sur les rapports entre cinéma et utopie. Une scénariste et romancière auteure de la saga de fantasy <em>Récits du Demi-Loup</em> publiée aux éditions <b>Les Moutons Électriques.</b> Ce qui nous rassemble est le désir profond de raconter des histoires, nos histoires en préservant l’intransigeance de nos envies et, naturellement, notre liberté de créateurs.
         </p>
@@ -34,8 +33,7 @@
         ">
         </div>
         <h2>Alice Bégon</h2>
-    </div>
-    <div class="troiscolonnes">
+        <div class="columnbreak"></div>
         <div class="img-container" style="
             background: url(<?php echo get_template_directory_uri(); ?>/assets/images/apropos/chloe-chevalier.jpg) no-repeat center;
             -webkit-background-size: cover; /* pour anciens Chrome et Safari */
@@ -45,8 +43,7 @@
         </div>
         <h2>Chloé Chevalier</h2>
         <p>Née en 1988, titulaire d’un Master de cinéma sur la fantasy, <b>Chloé Chevalier</b> commence par naviguer entre plusieurs activités – assistanat, production – avant de se focaliser essentiellement sur l’écriture. Trois longs métrages de sa plume sont actuellement en développement chez <b>les Films d’Argile.</b> Son expérience de l’écriture ne se limite pas au scénario puisque <b>Chloé Chevalier</b> écrit aussi des romans – sa série <em>Récits du Demi-Loup</em>, en quatre tomes, est publiée chez <b>les Moutons Électriques</b> – confirmant par la même occasion son goût pour les intrigues amples et la création d’univers imaginaires complexes.</p>
-    </div>
-    <div class="troiscolonnes">
+        <div class="columnbreak"></div>
         <div class="img-container" style="
             background: url(<?php echo get_template_directory_uri(); ?>/assets/images/apropos/clement-schneider.jpg) no-repeat center;
             -webkit-background-size: cover; /* pour anciens Chrome et Safari */

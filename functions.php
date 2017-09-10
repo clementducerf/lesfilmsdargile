@@ -110,3 +110,9 @@ function get_content_without_tag( $html, $tag )
   }
   return $dom->saveHTML();
 }
+
+
+// add Modernizr
+
+wp_register_script( 'modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', null, null, true );
+wp_enqueue_script('modernizr');

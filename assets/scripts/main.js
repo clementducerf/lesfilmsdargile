@@ -21,15 +21,28 @@
         // JavaScript to be fired on all pages
 
         var articlecontent;
-        $("main").on('mouseenter','article.brick',function () {
-          $(this).find('img').attr('src', $(this).data('img'));
-          $(this).addClass("hover");
-        });
 
-        $("main").on('mouseleave','article.brick',function () {
-          $(this).removeClass("hover");
-        });
+        if (!Modernizr.touch){
+          $("main").on('mouseenter','article.brick',function () {
+            $(this).find('img').attr('src', $(this).data('img'));
+            $(this).addClass("hover");
+          });
 
+          $("main").on('mouseleave','article.brick',function () {
+            $(this).removeClass("hover");
+          });
+        }
+
+        //post logic
+        if($(".posts").length){
+          //invert order of elements on mobile single movie page
+          if (window.matchMedia("(max-width: 1109px)").matches) {
+            console.log('pop');
+            var $slideshow = $('main .posts .col3');
+            $slideshow.insertAfter($('main .posts .entry-content'));
+          } else {
+          }
+        }
 
       },
       finalize: function() {
