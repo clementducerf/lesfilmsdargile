@@ -2,8 +2,14 @@ nav.nav-primary{
   z-index: 99;
   position: fixed;
   height: 100px;
+  max-width: 1238px;
+  @media (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
   @media (max-width: 768px) {
     height: 80px;
+
   }
   width: 100%;
   bottom: 0;
@@ -12,6 +18,9 @@ nav.nav-primary{
   padding: 14px;
   @media (min-width: 768px) {
     padding: 14px 50px;
+  }
+  @media (min-width: 1254px) {
+    padding: 14px 0px;
   }
   background-color: #fff;
   

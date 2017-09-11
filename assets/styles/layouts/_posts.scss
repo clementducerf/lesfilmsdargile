@@ -83,7 +83,6 @@
       line-height: 130%;
 
       //colonnes
-
       -webkit-columns: 394px 2;
       -moz-columns: 394px 2;
       columns: 394px 2;
@@ -96,6 +95,12 @@
       -moz-column-fill: auto;
       column-fill: auto;
 
+
+      p{
+        @media (min-width: 320px) and (max-width: 1109px) {
+          margin-bottom: 14px;
+        }
+      }
       @media (min-width: 320px) and (max-width: 1109px){
         width: 100%;
         columns: 394px 1;
