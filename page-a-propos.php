@@ -9,8 +9,13 @@
         } ?>
     </div>
     <div class="deuxcolonnes">
-        <?php if(get_field('apropos_structure')){
-            echo get_field('apropos_structure');
+        <?php if(get_field('apropos_structure_col1')){
+            echo get_field('apropos_structure_col1');
+        } ?>
+    </div>
+    <div class="deuxcolonnes">
+        <?php if(get_field('apropos_structure_col2')){
+            echo get_field('apropos_structure_col2');
         } ?>
     </div>
     <div class="conclusion">
@@ -19,8 +24,18 @@
         } ?>
     </div>
     <div class="troiscolonnes">
-        <?php if(get_field('apropos_membres')){
-            echo get_field('apropos_membres');
+        <?php if(get_field('apropos_membres_col1')){
+            echo get_field('apropos_membres_col1');
+        } ?>
+    </div>
+    <div class="troiscolonnes">
+        <?php if(get_field('apropos_membres_col2')){
+            echo get_field('apropos_membres_col2');
+        } ?>
+    </div>
+    <div class="troiscolonnes">
+        <?php if(get_field('apropos_membres_col3')){
+            echo get_field('apropos_membres_col3');
         } ?>
     </div>
     <?php get_template_part('templates/content', 'page'); ?>

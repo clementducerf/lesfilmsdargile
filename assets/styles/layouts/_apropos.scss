@@ -1,12 +1,4 @@
 div.apropos{
-  .columnbreak{
-    break-after: always;
-
-    @media (min-width: 320px) and (max-width: 768px){
-      break-after: avoid;
-    }
-  }
-
   .introduction,.conclusion{
     width: 615px;
     @media (min-width: 320px) and (max-width: 768px){
@@ -18,57 +10,35 @@ div.apropos{
     @include font-size(14px);
   }
   .deuxcolonnes{
-    //float: left;
     width: 614px;
-
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-
-    -webkit-column-gap: 14px;
-    -moz-column-gap: 14px;
-    column-gap: 14px;
-
-    -webkit-column-fill: auto;
-    -moz-column-fill: auto;
-    column-fill: auto;
-
-    margin-right: 14px;
+    &:first-of-type{
+      //margin-right: 14px;
+    }
 
     @media (min-width: 320px) and (max-width: 768px){
       width: 100%;
-
-      -webkit-column-count: 1; /* Chrome, Safari, Opera */
-      -moz-column-count: 1; /* Firefox */
-      column-count: 1;
-
       height: auto;
     }
 
-
     @include font-size(12px);
+
     p{
+      float: left;
+      width: 300px;
+      display: inline-block;
       margin-bottom: 14px;
     }
   }
   .troiscolonnes{
-    //float: left;
-    width: 598px;
-    //margin-right: 14px;
+    float: left;
+    width: 190px;
+    margin-right: 14px;
 
     @include font-size(11px);
 
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
 
     @media (min-width: 320px) and (max-width: 768px){
       width: 100%;
-
-      -webkit-column-count: 1; /* Chrome, Safari, Opera */
-      -moz-column-count: 1; /* Firefox */
-      column-count: 1;
-
       height: auto;
     }
 

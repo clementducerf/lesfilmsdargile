@@ -3,6 +3,7 @@ div.contact{
     width: 300px;
     margin-right: 14px;
     float: left;
+
     @include font-size(12px);
 
     p{
