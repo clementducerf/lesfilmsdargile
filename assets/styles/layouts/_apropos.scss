@@ -10,9 +10,9 @@ div.apropos{
     @include font-size(14px);
   }
   .deuxcolonnes{
-    width: 614px;
+    width: 628px;
     &:first-of-type{
-      //margin-right: 14px;
+      margin-right: 14px;
     }
 
     @media (min-width: 320px) and (max-width: 768px){
@@ -27,6 +27,10 @@ div.apropos{
       width: 300px;
       display: inline-block;
       margin-bottom: 14px;
+
+      &:first-of-type{
+        margin-right: 14px;
+      }
     }
   }
   .troiscolonnes{

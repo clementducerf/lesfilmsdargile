@@ -10,10 +10,37 @@ div.contact{
       margin-bottom: 0;
       a{
         font-weight: bold;
+
         &:hover{
           color: #000;
         }
       }
     }
+  }
+  .troiscolonnes{
+    float: left;
+    width: 250px;
+    margin-right: 14px;
+
+    @include font-size(12px);
+
+
+    @media (min-width: 320px) and (max-width: 768px){
+      width: 100%;
+      height: auto;
+    }
+
+    p{
+      margin-bottom: 0;
+      a{
+        font-weight: bold;
+
+        &:hover{
+          color: #000;
+        }
+      }
+    }
+
+
   }
 }

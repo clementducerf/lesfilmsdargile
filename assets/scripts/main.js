@@ -37,9 +37,14 @@
         if($(".posts").length){
           //invert order of elements on mobile single movie page
           if (window.matchMedia("(max-width: 1109px)").matches) {
-            console.log('pop');
-            var $slideshow = $('main .posts .col3');
-            $slideshow.insertAfter($('main .posts .entry-content'));
+            console.log('mobile');
+            var $synopsis = $('main .posts .entry-content');
+            var $slideshow = $('main .posts .caroussel');
+            var $links = $('main .posts .links');
+            $synopsis.appendTo('main .posts .col2-mobile');
+            $links.appendTo('main .posts .col2-mobile');
+            $slideshow.appendTo('main .posts .col2-mobile');
+            //$slideshow.insertAfter($('main .posts .entry-content'));
           } else {
           }
         }

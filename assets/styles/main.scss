@@ -47,7 +47,6 @@ html, body{
   display: none; // will be shown using javascript if user has js enabled
   position: absolute;
   z-index: 98;
-  top: 150px;
   left: 0;
   width: 100%;
   height: calc(100vh - 150px);
@@ -68,7 +67,6 @@ html, body{
 
   @include mq($from: mobile, $until:tablet) {
     max-width: 100%;
-
   }
 }
 .hover{
@@ -91,6 +89,7 @@ main, .apropos, .contact, .realisateurs{
   padding-right: 7px!important;
   padding-left: 7px!important;
 }
+
 main.home, .filmslongs, .filmscourts, .projets, .movies, .realisateurs{
   article{
     display: inline-block;
