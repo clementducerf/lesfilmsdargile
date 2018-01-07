@@ -71,14 +71,11 @@ html, body{
 }
 .hover{
   a{
-    p.date{
-      display: none;
-    }
-    h2.entry-title{
-      display: none;
-    }
-    div.entry-summary{
-      display: none;
+    .entry-title, .entry-summary, .date{
+      opacity: 0;
+      visibility: hidden;
+      color: red!important;
+      //display: none;
     }
     .hoverimg{
       display: block!important;
@@ -101,6 +98,7 @@ main.home, .filmslongs, .filmscourts, .projets, .movies, .realisateurs{
     margin-right: 7px;
     margin-top: 7px;
     margin-bottom: 7px;
+    overflow: hidden;
 
     @media (min-width: 320px) and (max-width: 436px){
       width: calc((50% - 14px));
@@ -111,10 +109,13 @@ main.home, .filmslongs, .filmscourts, .projets, .movies, .realisateurs{
     a{
       text-decoration: none;
       color: #000;
+      overflow: hidden;
+      backface-visibility: hidden;
 
       .hoverimg{
         display: none;
       }
+
       img{
         max-width: 100%;
       }

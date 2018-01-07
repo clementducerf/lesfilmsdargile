@@ -17,20 +17,22 @@
           }
           echo "<a href='".$pageurl."?realisateur=".htmlspecialchars(get_post_meta(get_the_ID(), 'auteur', true))."'>".get_post_meta(get_the_ID(), 'auteur', true)."</a>";
           ?></p>
-        <p><?= get_post_meta(get_the_ID(), 'type', true); ?></p>
-        <p><?= get_post_meta(get_the_ID(), 'format', true); ?></p>
+        <?php if(get_post_meta(get_the_ID(), 'type', true)): ?><p><p><?= get_post_meta(get_the_ID(), 'type', true); ?></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'format', true)): ?><p><?= get_post_meta(get_the_ID(), 'format', true); ?></p><?php endif; ?>
+        <?php if(
+        (get_post_meta(get_the_ID(), 'type', true) || get_post_meta(get_the_ID(), 'format', true)) && (get_post_meta(get_the_ID(), 'soutiens', true) || get_post_meta(get_the_ID(), 'festivals', true))
+        ): ?><br/><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'soutiens', true)): ?><p>Soutiens&#8239;: <b><?= get_post_meta(get_the_ID(), 'soutiens', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'festivals', true)): ?><p>Festivals&#8239;: <b><?= get_post_meta(get_the_ID(), 'festivals', true); ?></b></p><?php endif; ?>
         <br/>
-        <p>Soutiens&#8239;: <b><?= get_post_meta(get_the_ID(), 'soutiens', true); ?></b></p>
-        <p>Festivals&#8239;: <b><?= get_post_meta(get_the_ID(), 'festivals', true); ?></b></p>
-        <br/>
-        <p>Avec&#8239;: <b><?= get_post_meta(get_the_ID(), 'acteurs', true); ?></b></p>
-        <p>Scénario&#8239;: <b><?= get_post_meta(get_the_ID(), 'scenario', true); ?></b></p>
-        <p>Production&#8239;: <b><?= get_post_meta(get_the_ID(), 'production', true); ?></b></p>
-        <p>Image&#8239;: <b><?= get_post_meta(get_the_ID(), 'image', true); ?></b></p>
-        <p>Son&#8239;: <b><?= get_post_meta(get_the_ID(), 'son', true); ?></b></p>
-        <p>Décors&#8239;: <b><?= get_post_meta(get_the_ID(), 'decor', true); ?></b></p>
-        <p>Costumes&#8239;: <b><?= get_post_meta(get_the_ID(), 'costumes', true); ?></b></p>
-        <p>Montage&#8239;: <b><?= get_post_meta(get_the_ID(), 'montage', true); ?></b></p>
+        <?php if(get_post_meta(get_the_ID(), 'acteurs', true)): ?><p>Avec&#8239;: <b><?= get_post_meta(get_the_ID(), 'acteurs', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'scenario', true)): ?><p>Scénario&#8239;: <b><?= get_post_meta(get_the_ID(), 'scenario', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'production', true)): ?><p>Production&#8239;: <b><?= get_post_meta(get_the_ID(), 'production', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'image', true)): ?><p>Image&#8239;: <b><?= get_post_meta(get_the_ID(), 'image', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'son', true)): ?><p>Son&#8239;: <b><?= get_post_meta(get_the_ID(), 'son', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'decors', true)): ?><p>Décors&#8239;: <b><?= get_post_meta(get_the_ID(), 'decors', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'costumes', true)): ?><p>Costumes&#8239;: <b><?= get_post_meta(get_the_ID(), 'costumes', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'montage', true)): ?><p>Montage&#8239;: <b><?= get_post_meta(get_the_ID(), 'montage', true); ?></b></p><?php endif; ?>
       </div>
       <div class="col2">
         <div class="photo" style="
