@@ -22,12 +22,14 @@
         <?php if(
         (get_post_meta(get_the_ID(), 'type', true) || get_post_meta(get_the_ID(), 'format', true)) && (get_post_meta(get_the_ID(), 'soutiens', true) || get_post_meta(get_the_ID(), 'festivals', true))
         ): ?><br/><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'distribution', true)): ?><p>Distribution&#8239;: <b><?= get_post_meta(get_the_ID(), 'distribution', true); ?></b></p><?php endif; ?>
         <?php if(get_post_meta(get_the_ID(), 'soutiens', true)): ?><p>Soutiens&#8239;: <b><?= get_post_meta(get_the_ID(), 'soutiens', true); ?></b></p><?php endif; ?>
         <?php if(get_post_meta(get_the_ID(), 'festivals', true)): ?><p>Festivals&#8239;: <b><?= get_post_meta(get_the_ID(), 'festivals', true); ?></b></p><?php endif; ?>
         <br/>
         <?php if(get_post_meta(get_the_ID(), 'acteurs', true)): ?><p>Avec&#8239;: <b><?= get_post_meta(get_the_ID(), 'acteurs', true); ?></b></p><?php endif; ?>
         <?php if(get_post_meta(get_the_ID(), 'scenario', true)): ?><p>Scénario&#8239;: <b><?= get_post_meta(get_the_ID(), 'scenario', true); ?></b></p><?php endif; ?>
         <?php if(get_post_meta(get_the_ID(), 'production', true)): ?><p>Production&#8239;: <b><?= get_post_meta(get_the_ID(), 'production', true); ?></b></p><?php endif; ?>
+        <?php if(get_post_meta(get_the_ID(), 'directiondeproduction', true)): ?><p>Direction de production&#8239;: <b><?= get_post_meta(get_the_ID(), 'directiondeproduction', true); ?></b></p><?php endif; ?>
         <?php if(get_post_meta(get_the_ID(), 'image', true)): ?><p>Image&#8239;: <b><?= get_post_meta(get_the_ID(), 'image', true); ?></b></p><?php endif; ?>
         <?php if(get_post_meta(get_the_ID(), 'son', true)): ?><p>Son&#8239;: <b><?= get_post_meta(get_the_ID(), 'son', true); ?></b></p><?php endif; ?>
         <?php if(get_post_meta(get_the_ID(), 'decors', true)): ?><p>Décors&#8239;: <b><?= get_post_meta(get_the_ID(), 'decors', true); ?></b></p><?php endif; ?>
